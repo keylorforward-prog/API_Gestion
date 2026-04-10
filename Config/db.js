@@ -4,12 +4,12 @@
 //de la base de datos y poder subir a Github el aplicativo
 //.env
 
-const mysql2 = require('mysql'); //VER
+const mysql = require('mysql2'); //VER
 
-const conexion = mysql2.createConnection({
+const conexion = mysql.createConnection({
     host: 'localhost',                                     //VER LOS DATOS
     user: 'root',                                          //CAMBIAR SEGUN LA COMPU
-    password: 'K14B03M05.com',                             //.env para esto porque es la contra        
+    password: 'PONER CONTRASENA',    //PONER LA CONTRASENA SE DEJA ASI HASTA HACER EL .env                          //.env para esto porque es la contra        
     database: 'SistemaGestionQUIZ'                         //Mi DB
 });
             
