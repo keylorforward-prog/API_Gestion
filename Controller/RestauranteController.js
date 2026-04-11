@@ -33,3 +33,35 @@ exports.crearRestaurante = (req, res) => {                //POST
 
 //req.body 
 
+exports.actualizarRestaurante = (req, res) => {    //PUT
+    const { id } = req.params;
+    const { nombre, ubicacion, menu, abierto } = req.body;
+    const sql = "UPDATE Restaurante SET nombre = ?, ubicacion = ?, menu = ?, abierto = ? WHERE id = ?";
+
+    conexion.query(sql, [nombre, ubicacion, menu, abierto, id], (err, result) => {
+        if (err) {
+            console.log(err);
+            return res.status(500).json({ error: 'Error al actualizar el Restaurante' });
+        }
+        if (result.affectedRows === 0) {
+            return res.status(404).json({ error: 'Restaurante no encontrado' });
+        }
+        res.json({ message: 'Restaurante actualizado correctamente' });
+    });
+};
+
+exports.eliminarRestaurante = (req, res) => {    //DELETE
+    const { id } = req.params;
+    const sql = "DELETE FROM Restaurante WHERE id = ?";
+
+    conexion.query(sql, [id], (err, result) => {
+        if (err) {
+            console.log(err);
+            return res.status(500).json({ error: 'Error al eliminar el Restaurante' });
+        }
+        if (result.affectedRows === 0) {
+            return res.status(404).json({ error: 'Restaurante no encontrado' });
+        }
+        res.json({ message: 'Restaurante eliminado correctamente' });
+    });
+};

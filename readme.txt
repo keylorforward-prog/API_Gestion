@@ -1,6 +1,8 @@
 https://github.com/keylorforward-prog/API_Gestion.git
 https://github.com/keylorforward-prog/API_Gestion
 
+node app.js LEVANTAR BACKEND
+
 ESTRUCTURA: 
 
 Restaurante

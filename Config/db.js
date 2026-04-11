@@ -9,7 +9,7 @@ const mysql = require('mysql2'); //VER
 const conexion = mysql.createConnection({
     host: 'localhost',                                     //VER LOS DATOS
     user: 'root',                                          //CAMBIAR SEGUN LA COMPU
-    password: 'PONER CONTRASENA',    //PONER LA CONTRASENA SE DEJA ASI HASTA HACER EL .env                          //.env para esto porque es la contra        
+    password: 'K14B03M05.com',    //PONER LA CONTRASENA SE DEJA ASI HASTA HACER EL .env                          //.env para esto porque es la contra        
     database: 'SistemaGestionQUIZ'                         //Mi DB
 });
             

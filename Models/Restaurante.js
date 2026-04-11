@@ -9,4 +9,5 @@ class Restaurante {                             //Las funciones no van dentro de
     }                                           //No se van hacer instancias porque van en el controlador
 }                                               //En la db tiene q ser el mismo nombre de la clase
 module.exports = Restaurante;                   //Se esta haciendo un API puro sin ORM
-    
+
+//En las clases solo van los atributos.
