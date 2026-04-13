@@ -53,3 +53,16 @@ git remote add origin  (y la URL)
 
 git push -u origin main
 --------------------------------------
+
+Crear Restaurante Postman
+
+{
+    "nombre": "Soda Tacos",
+    "ubicacion": "Limon, Costa Rica",
+    "menu": "Rice and beans, Papa Dulce, Pan con Mantequillo"
+}
+
+--------------------------------------
+
+Crear Cliente Postman
+
